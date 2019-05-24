@@ -1,0 +1,78 @@
+body{
+    background-color: black;
+    text-align: center;
+
+}
+h1{
+    color: rgb(206, 202, 202);
+    /*font-family: 'Satisfy', cursive;*/
+    font-family: 'Gloria Hallelujah', cursive;
+    /*font-family: 'Nanum Pen Script', cursive;*/
+    /*font-family: 'Shojumaru', cursive;*/
+
+
+    font-size: 60px;
+    font-weight: 700px;
+}
+
+
+
+.navbar {
+    background-color:black;
+    line-height: 40px;
+
+}
+
+.navitem {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Gloria Hallelujah', cursive;
+
+}
+a {
+    color:rgb(209, 203, 203);
+    text-decoration:none;
+
+}
+.navbar-login {
+    float: right;
+    margin-right: 20px;
+    padding: 0;
+    line-height: 38px;
+}
+
+.timetable{
+    width:1400px;
+}
+table{
+    width:1400px;
+}
+
+th{
+    border: 2px;
+    margin: 0;
+    padding: 0;
+    border-style:solid;
+    background-color: rgb(144, 151, 151);
+    width: 200px;
+    word-wrap:break-word;
+
+
+
+}
+tr.title{
+    width: 1400px;
+    height:70px;
+    font-size:30px;
+    font-weight:200;
+    background-color: rgb(144, 151, 151);
+    color:black;
+    font-family: 'Gloria Hallelujah', cursive;
+
+
+}
+tr{
+    width:1400px;
+    height:200px;
+}
