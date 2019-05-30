@@ -5,9 +5,11 @@
     <meta charset="utf-8">
     <title>Class schedule </title>
     <link rel="stylesheet" href="style.css" media="screen">
+    <script src="schedule.js" charset="utf-8" defer></script>
     <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shojumaru&display=swap" rel="stylesheet">
 
     <script src="schedule.js" charset="utf-8" defer></script>
 
@@ -26,7 +28,7 @@
     </header>
     <main class="class-container">
         <div class="timetable">
-            <table style="table-layout: fixed; width: 100%;word-break:break-all;" >
+            <table style="table-layout: fixed; width: 100%;word-break:break-all;" id="table-content" >
                 <tr class="title">
                     <th class="table-title" colspan="2" width=200>Times|Days</th>
                     <th class="table-title">Monday</th>
@@ -41,123 +43,155 @@
                     <th rowspan="5" colspan="1">AM</th>
                     <th>8:00</th>
 
-                    <th class=“Monday”>
-                        <div class = "class-container">
-                            <p class = "name">SUS</p>
-                            <p class = "location">ANO</p>
-                            <p class = "time">8:00-9:00 22222222222222222222222222222222222222222222</p>
+                    <td class=”Monday” id= "blockContainer">
+                        <div class="content">
+                            <p class = "className">SUS</p>
+                            <p class = "classLocation">ANO</p>
+                            <p class = "classTime">8:00-9:00 22222222222222222222222222222222222222222222</p>
                         </div>
-                    </th>
-                    <th class=”Tuesday“></th>
-                    <th class=”Wednesday“></th>
-                    <th class=“Thurseday”></th>
-                    <th class=“Friday”></th>
+                    </td>
+                    <td class=”Tuesday“ id= "blockContainer"></td>
+                    <td class=”Wednesday“ id= "blockContainer"></td>
+                    <td class=“Thurseday” id= "blockContainer"></td>
+                    <td class=“Friday” id= "blockContainer"></td>
 
                 </tr>
             
                 <tr class="9">
                     <th>9:00</th>
-                    <th class=“Monday”></th>
-                    <th class=”Tuesday“></th>
-                    <th class=”Wednesday“></th>
-                    <th class=“Thurseday”></th>
-                    <th class=“Friday”></th>
+                    <td class=“Monday” id= "blockContainer"></td>
+                    <td class=”Tuesday“ id= "blockContainer"></td>
+                    <td class=”Wednesday“ id= "blockContainer"></td>
+                    <td class=“Thurseday” id= "blockContainer"></td>
+                    <td class=“Friday” id= "blockContainer"></td>
                 </tr>
 
                 <tr class="10">
                     <th>10:00</th>
-                    <th class=“Monday”></th>
-                    <th class=”Tuesday“></th>
-                    <th class=”Wednesday“></th>
-                    <th class=“Thurseday”></th>
-                    <th class=“Friday”></th>
+                    <td class=“Monday” id= "blockContainer"></td>
+                    <td class=”Tuesday“ id= "blockContainer"></td>
+                    <td class=”Wednesday“ id= "blockContainer"></td>
+                    <td class=“Thurseday” id= "blockContainer"></td>
+                    <td class=“Friday” id= "blockContainer"></td>
                 </tr>
 
                 <tr class="11">
                     <th>11:00</th>
-                    <th class=“Monday”></th>
-                    <th class=”Tuesday“></th>
-                    <th class=”Wednesday“></th>
-                    <th class=“Thurseday”></th>
-                    <th class=“Friday”></th>
+                    <td class=“Monday” id= "blockContainer"></td>
+                    <td class=”Tuesday“ id= "blockContainer"></td>
+                    <td class=”Wednesday“ id= "blockContainer"></td>
+                    <td class=“Thurseday” id= "blockContainer"></td>
+                    <td class=“Friday” id= "blockContainer"></td>
                 </tr>
 
                 <tr class="12">
                     <th>12:00</th>
-                    <th class=“Monday”></th>
-                    <th class=”Tuesday“></th>
-                    <th class=”Wednesday“></th>
-                    <th class=“Thurseday”></th>
-                    <th class=“Friday”></th>
+                    <td class=“Monday” id= "blockContainer"></td>
+                    <td class=”Tuesday“ id= "blockContainer"></td>
+                    <td class=”Wednesday“ id= "blockContainer"></td>
+                    <td class=“Thurseday” id= "blockContainer"></td>
+                    <td class=“Friday” id= "blockContainer"></td>
                 </tr>
             
                 <tr class="13">
                     <th rowspan="7" colspan="1">PM</th>
                     <th>13:00</th>
-                    <th class=“Monday”>
+                    <td class=“Monday” id= "blockContainer">
                         <p></p>
                     
                         
-                    </th>
-                    <th class=”Tuesday“></th>
-                    <th class=”Wednesday“></th>
-                    <th class=“Thurseday”></th>
-                    <th class=“Friday”></th>
+                    </td>
+                    <td class=”Tuesday“ id= "blockContainer"></td>
+                    <td class=”Wednesday“ id= "blockContainer"></td>
+                    <td class=“Thurseday” id= "blockContainer"></td>
+                    <td class=“Friday” id= "blockContainer"></td>
                 </tr>
             
                 <tr class="14">
                     <th>14:00</th>
-                    <th class=“Monday”></th>
-                    <th class=”Tuesday“></th>
-                    <th class=”Wednesday“></th>
-                    <th class=“Thurseday”></th>
-                    <th class=“Friday”></th>
+                    <td class=“Monday” id= "blockContainer"></td>
+                    <td class=”Tuesday“ id= "blockContainer"></td>
+                    <td class=”Wednesday“ id= "blockContainer"></td>
+                    <td class=“Thurseday” id= "blockContainer"></td>
+                    <td class=“Friday” id= "blockContainer"></td>
                 </tr>
                 <tr class="15">
                     <th>15:00</th>
-                    <th class=“Monday”></th>
-                    <th class=”Tuesday“></th>
-                    <th class=”Wednesday“></th>
-                    <th class=“Thurseday”></th>
-                    <th class=“Friday”></th>
+                    <td class=“Monday” id= "blockContainer"></td>
+                    <td class=”Tuesday“ id= "blockContainer"></td>
+                    <td class=”Wednesday“ id= "blockContainer"></td>
+                    <td class=“Thurseday” id= "blockContainer"></td>
+                    <td class=“Friday” id= "blockContainer"></td>
                 </tr>
                 <tr class="16">
                     <th>16:00</th>
-                    <th class=“Monday”></th>
-                    <th class=”Tuesday“></th>
-                    <th class=”Wednesday“></th>
-                    <th class=“Thurseday”></th>
-                    <th class=“Friday”></th>
+                    <td class=“Monday” id= "blockContainer"></td>
+                    <td class=”Tuesday“ id= "blockContainer"></td>
+                    <td class=”Wednesday“ id= "blockContainer"></td>
+                    <td class=“Thurseday” id= "blockContainer"></td>
+                    <td class=“Friday” id= "blockContainer"></td>
                 </tr>
                 <tr class="17">
                     <th>17:00</th>
-                    <th class=“Monday”></th>
-                    <th class=”Tuesday“></th>
-                    <th class=”Wednesday“></th>
-                    <th class=“Thurseday”></th>
-                    <th class=“Friday”></th>
+                    <td class=“Monday” id= "blockContainer"></td>
+                    <td class=”Tuesday“ id= "blockContainer"></td>
+                    <td class=”Wednesday“ id= "blockContainer"></td>
+                    <td class=“Thurseday” id= "blockContainer"></td>
+                    <td class=“Friday” id= "blockContainer"></td>
                 </tr>
                 <tr class="18">
                     <th>18:00</th>
-                    <th class=“Monday”></th>
-                    <th class=”Tuesday“></th>
-                    <th class=”Wednesday“></th>
-                    <th class=“Thurseday”></th>
-                    <th class=“Friday”></th>
+                    <td class=“Monday” id= "blockContainer"></td>
+                    <td class=”Tuesday“ id= "blockContainer"></td>
+                    <td class=”Wednesday“ id= "blockContainer"></td>
+                    <td class=“Thurseday” id= "blockContainer"></td>
+                    <td class=“Friday” id= "blockContainer"></td>
                 </tr>
                 <tr class="19">
                     <th>19:00</th>
-                    <th class=“Monday”></th>
-                    <th class=”Tuesday“></th>
-                    <th class=”Wednesday“></th>
-                    <th class=“Thurseday”></th>
-                    <th class=“Friday”></th>
+                    <td class=“Monday” id= "blockContainer"></td>
+                    <td class=”Tuesday“ id= "blockContainer"></td>
+                    <td class=”Wednesday“ id= "blockContainer"></td>
+                    <td class=“Thurseday” id= "blockContainer"></td>
+                    <td class=“Friday” id= "blockContainer"></td>
                 </tr>
             </table>
 							
         </div>
 
     </main>
+
+    <div id="modal-backdrop" class="hidden"></div>
+    <div id="create-table-modal" class="hidden">
+        <div class="modal-dialog">
+
+            <div class="modal-header">
+                <h3>Class information</h3>
+                <button type="button" class="modal-close-button">&times;</button>
+            </div>
+
+            <div class="modal-body">
+                <div class="table-input-element">
+                    <label for="table-class-input">Class</label>
+                    <textarea id="table-class-input"></textarea>
+                </div>
+                <div class="table-input-element">
+                    <label for="table-location-input">Location</label>
+                    <input type="text" id="location-attribution-input">
+                </div>
+                <div class="table-input-element">
+                        <label for="table-time-input">Time</label>
+                        <input type="text" id="time-attribution-input">
+                    </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="modal-cancel-button">Cancel</button>
+                <button type="button" class="modal-accept-button">Add</button>
+            </div>
+
+        </div>
+    </div>
   </body>
 
 </html>
