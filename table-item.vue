@@ -4,7 +4,8 @@
         <div>{{course[0].name}}</div>
         <div v-if="course[0].classroom" class="room">{{course[0].classroom}}</div>
     </div>
-</template>
+</template> 
+
 
 <script>
   import Vue from 'vue'
