@@ -146,7 +146,9 @@ app.use(bodyParser.json());
 app.use(express.static('public'));
 
 app.get('/', async function (req, res, next) {
-  schedule._schedule = await mongoLogic.QueryCourse()
+  const ret = await mongoLogic.QueryCourse()
+  if(ret.length > 0)
+	schedule._schedule = ret
   res.status(200).render('table',schedule);
 });
 
