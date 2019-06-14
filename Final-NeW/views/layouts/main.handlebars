@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>Class schedule </title>
+    <link rel="stylesheet" href="style.css" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shojumaru&display=swap" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.3.0/handlebars.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.runtime.js"></script>
+    <script src="/blockContentTemplate.js"></script>
+
+    <script src="schedule.js" charset="utf-8" defer></script>
+  </head>
+
+  <body>    
+    <header>
+      <h1>Class schedule</h1>
+      <nav class="navbar">
+            <ul class="navlist">
+              <li class="navitem navbar-title"><a href="#"> Schedule</a></li>
+            </ul>
+
+    </header>
+    <main class="class-container">
+        {{{body}}}
+    </main>   
+  </body>
+
+</html>

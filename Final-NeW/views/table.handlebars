@@ -1,0 +1,19 @@
+ <div class="timetable">
+    <table style="table-layout: fixed; w>1th: 100%;word-break:break-all;" >
+        <tr class="title">
+            <th class="table-title">Times|Days</th>
+            <th class="table-title">Monday</th>
+            <th class="table-title">Tuesday</th>
+            <th class="table-title">Wednesday</th>
+            <th class="table-title">Thurseday</th>
+            <th class="table-title">Friday</th>
+        </tr>
+        
+        {{#each schedule}}
+            {{>time}}    
+        {{/each}}
+
+    
+    </table>
+    {{> button}}                 
+</div>
